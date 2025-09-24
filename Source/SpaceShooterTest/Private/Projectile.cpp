@@ -22,7 +22,7 @@ AProjectile::AProjectile()
 	ProjectileMovementComponent->MaxSpeed = 2000.f;
 	ProjectileMovementComponent->ProjectileGravityScale = 0.f;
 
-	InitialLifeSpan = 4.f;
+	InitialLifeSpan = 2.f;
 
 	this->OnActorBeginOverlap.AddDynamic(this, &AProjectile::OnOverlap);
 }
